@@ -17,7 +17,7 @@ from langchain_groq import ChatGroq
 # load_dotenv()  # take environment variables from .env (especially groq api key)
 llm = ChatGroq(
     temperature=0.9,
-    groq_api_key='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',
+    groq_api_key='',
     model_name="llama-3.1-70b-versatile"
 )
 
