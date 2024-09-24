@@ -21,8 +21,8 @@ llm = ChatGroq(
     model_name="llama-3.1-70b-versatile"
 )
 
-st.title("Holiday📈")
-st.sidebar.title("Holiday Tool")
+st.title("Pdf upload📈")
+st.sidebar.title("Pdf Upload Tool")
 # process_file_clicked = st.sidebar.button("Process File")
 main_placeholder = st.empty()
 if 'clicked' not in st.session_state:
