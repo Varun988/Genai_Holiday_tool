@@ -58,13 +58,13 @@ if st.session_state.clicked:
       vectorstore = FAISS.from_documents(pages, embeddings)
       main_placeholder.text("Embedding Vector Started Building...✅✅✅")
       time.sleep(2)
+      file_path = "/content/sample_data/vector_index.pkl"#run jupyter notebook to generte this file
 
       # Save the FAISS index to a pickle file
       with open(file_path, "wb") as f:
           pickle.dump(vectorstore, f)
           # print(uploaded_file)
 
-file_path = "/content/sample_data/vector_index.pkl"#run jupyter notebook to generte this file
 
 main_placeholder = st.empty()
 
